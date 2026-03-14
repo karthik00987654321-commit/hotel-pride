@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+:root {
+  --gold: #be863c;
+  --dark: #1a1a1a;
+  --cream: #f5f2ed;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark);
+}
+
+.lux-card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.lux-card:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  transform: translateY(-4px);
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+.gold-bg {
+  background-color: var(--gold);
+}
+
+.gold-border {
+  border-color: var(--gold);
+}
